@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI Litigation Helper Against Abusive Powers</title>
+
+    </head>
+    <body>
+
+        <h2>AI Litigation Helper Against Abusive Powers</h2>
+        <h3>Legal information not legal advice; use due diligence, consult an attorney. </h3>
+        <p>Please fill out or choose from criteria below:</p>
+        <p>The Plaintiff (your full name):</p> <input type="text" id="myTextt" name="yourfullname" value="Your Name">
+        <p>Press here after typing name:</p>
+        <button onclick="myName();">Press Button</button><font>for Plaintiff</font>
+        <script>
+            function myName(){
+        
+                let inputField = document.getElementById("myTextt");
+                let value = inputField.value;
+                document.getElementById("plaintiff01").innerHTML = value;
+            }
+        
+        </script>
+        <br>
+        <p>The Defense (who you are suing):</p> <input type="text" id="myTextt2" name="personsuing" value="Offender">
+        <p>Type name above of defendent, person you are suing:</p> 
+        <button onclick="beingSued();">Press Button</button><font>for Defendant</font>
+        <script>
+             function beingSued(){
+                let inputField = document.getElementById("myTextt2");
+                let value = inputField.value;
+                document.getElementById("defense01").innerHTML = value;
+            }
+        </script>
+
+<br>
+<p></p>
+        
+        <form onclick= myFunction();>
+            <label for="perps">Choose perpetrator</label>
+            <select id="perps">
+            <option value ="Law Enforcement">Law Enforcement</option>
+            <option value ="Contractor">Contractor</option>
+            <option value ="Vigilante">Vigilante</option>
+        
+            </select>   
+        </form>
+<font>Press for </font><button onclick="perpsVal()">Perps Value</button>
+<script>
+    function perpsVal(){
+
+  document.getElementById("perpsvalue").innerHTML = perps.value;
+
+    }
+  </script>
+       <p></p>
+        
+        <form onclick = myFunction();>
+            <label for="hrs">Choose type of harassment</label>
+            <select id="hrs">
+            <option value ="Physical Touch">Physical Touch</option>
+            <option value ="Energy Weapons">Energy Weapons</option>
+            <option value ="Intermediate Force">Intermediate Force</option>
+            </select>
+            </form>
+            <font>Press for </font><button onclick="hrsVal()">Harassment Value</button>
+            
+            <script>
+              function hrsVal(){
+            
+            
+            document.getElementById("hrssvalue").innerHTML = hrs.value;
+            
+              }
+            </script>
+            <p></p>
+        
+            <form onclick = myFunction();>
+              <label for="where">Where Did The Offense Occur?</label>
+              <select id="where">
+              <option value ="at dwelling">Dwelling</option>
+              <option value ="driving (in car)">Car</option>
+              <option value ="walking">Pedestrian</option>
+              <option value ="outside, dwelling, and commuting">All of the Above</option>
+              </select>
+              </form>
+              <font>Press for </font><button onclick="whereVal()">Where Value</button>
+              <br>
+        <script>
+            function whereVal(){
+          
+          document.getElementById("wherevalue").innerHTML = where.value;
+            } 
+          </script>
+          <p></p>
+
+
+              <!-- <p>Choose criteria, who, what, where and press button:</p>
+              <button onclick="myFunction();">Press Button</button> -->
+              
+        
+            <p>Choose Use of Force, Intermediate Force (If Applicable):</p>
+            <!--<input type="checkbox" id="myCheck01" onclick="useForce01()">
+            <label for="myCheck">Physical Restraint or Baton</label> -->
+            <input type="checkbox" id="myCheck" onclick="useForce()">
+            <label for="myCheck">Physical Restraint or Baton</label> 
+            <input onclick="useForce2()" id="myCheck2" type="checkbox">
+            <label for="myCheck2">CED (Taser)</label> 
+            <input type="checkbox" id="myCheck3" onclick="useForce3()">
+            <label for="myCheck3">Directed Energy (DEW)</label> 
+            <input type="checkbox" id="myCheck4" onclick="useForce4()">
+            <label for="myCheck4">Laser, Dazzler</label> 
+            <input type="checkbox" id="myCheck5" onclick="useForce5()">
+            <label for="myCheck5">Sound Weapon, LRAD </label> 
+            <input type="checkbox" id="myCheck6" onclick="useForce6()">
+            <label for="myCheck6">Projectiles</label> 
+            <input type="checkbox" id="myCheck7" onclick="useForce7()">
+            <label for="myCheck7">Bio-Weapons</label> 
+            <input type="checkbox" id="myCheck8" onclick="useForce8()">
+            <label for="myCheck8">Skin Irritants</label> 
+            <input type="checkbox" id="myCheck9" onclick="useForce9()">
+            <label for="myCheck9">Chemical Irritants</label> 
+            <input type="checkbox" id="myCheck10" onclick="useForce10()">
+            <label for="myCheck10">Acts of Violence</label> 
+        
+            
+            <br>
+        <p></p>
+        
+        <script>
+        
+        
+          /*function useForce01() {
+            var checkBox = document.getElementById("myCheck01");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true){
+              text.style.display = "inline";
+            } else {
+               text.style.display = "none";
+            }
+          }*/
+          </script>
+        
+            
+            <script>
+        
+        
+            function useForce() {
+              var checkBox = document.getElementById("myCheck");
+              var text = document.getElementById("text");
+              if (checkBox.checked == true){
+                text.style.display = "inline";
+              } else {
+                 text.style.display = "none";
+              }
+            }
+            </script>
+        
+            <script>
+                  function useForce2() {
+              var checkBox = document.getElementById("myCheck2");
+              var text = document.getElementById("text2");
+              if (checkBox.checked == true){
+                text.style.display = "inline";
+              } else {
+                 text.style.display = "none";
+              }
+            }
+            </script>
+        
+        <script>
+        function useForce3() {
+        var checkBox = document.getElementById("myCheck3");
+        var text = document.getElementById("text3");
+        if (checkBox.checked == true){
+        text.style.display = "inline";
+        } else {
+        text.style.display = "none";
+        }
+        }
+        </script>
+        
+        <script>
+        function useForce4() {
+        var checkBox = document.getElementById("myCheck4");
+        var text = document.getElementById("text4");
+        if (checkBox.checked == true){
+        text.style.display = "inline";
+        } else {
+        text.style.display = "none";
+        }
+        }
+        </script>
+        
+        <script>
+        function useForce5() {
+        var checkBox = document.getElementById("myCheck5");
+        var text = document.getElementById("text5");
+        if (checkBox.checked == true){
+        text.style.display = "inline";
+        } else {
+        text.style.display = "none";
+        }
+        }
+        </script>
+        
+        <script>
+        function useForce6() {
+        var checkBox = document.getElementById("myCheck6");
+        var text = document.getElementById("text6");
+        if (checkBox.checked == true){
+        text.style.display = "inline";
+        } else {
+        text.style.display = "none";
+        }
+        }
+        </script>
+        
+        <script>
+          function useForce7() {
+          var checkBox = document.getElementById("myCheck7");
+          var text = document.getElementById("text7");
+          if (checkBox.checked == true){
+          text.style.display = "inline";
+          } else {
+          text.style.display = "none";
+          }
+          }
+          </script>
+        
+        <script>
+          function useForce8() {
+          var checkBox = document.getElementById("myCheck8");
+          var text = document.getElementById("text8");
+          if (checkBox.checked == true){
+          text.style.display = "inline";
+          } else {
+          text.style.display = "none";
+          }
+          }
+          </script>
+        
+        <script>
+          function useForce9() {
+          var checkBox = document.getElementById("myCheck9");
+          var text = document.getElementById("text9");
+          if (checkBox.checked == true){
+          text.style.display = "inline";
+          } else {
+          text.style.display = "none";
+          }
+          }
+          </script>
+        
+        <script>
+          function useForce10() {
+          var checkBox = document.getElementById("myCheck10");
+          var text = document.getElementById("text10");
+          if (checkBox.checked == true){
+          text.style.display = "inline";
+          } else {
+          text.style.display = "none";
+          }
+          }
+          </script>
+        
+      
+        <option value ="Physical Touch">Physical Touch</option>
+        <option value ="Energy Weapons">Energy Weapons</option>
+        <option value ="Intermediate Force">Intermediate Force</option>
+
+        
+        <script>
+            function myFunction2(){
+         if (perps.value == "Law Enforcement" && hrs.value =="Physical Touch"){
+        
+          document.getElementById("demo3").innerHTML = " the US Constitution, 18 U.S.C. 242, color of law deprivation of rights; excessive force, file in district court. ";
+            }
+        else if (perps.value == "Law Enforcement" && hrs.value =="Energy Weapons") {
+        
+            document.getElementById("demo3").innerHTML = " the US Constitution, police miscondcut, 18 U.S.C. 242, color of law deprivation of rights, file in district court. ";
+        
+        }
+        else if (perps.value == "Law Enforcement" && hrs.value =="Intermediate Force") {
+        
+        document.getElementById("demo3").innerHTML = " the US Constitution, police miscondcut, 18 U.S.C. 242, color of law deprivation of rights, file in district court. ";
+        
+        }
+        else if (perps.value == "Contractor" && hrs.value =="Physical Touch") { 
+        
+        document.getElementById("demo3").innerHTML = " disproportionate use of force, right to life/human rights violations, act of physical violence, file in superior court or district court under FTCA, Edison v. U.S., supra, 822 F.3d 510, if contractor retained by the US Government. ";
+        
+        }
+        else if (perps.value == "Contractor" && hrs.value =="Energy Weapons") { 
+        
+        document.getElementById("demo3").innerHTML = " disproportionate use of force, right to life/human rights violations, negligence, act of physical violence, file in superior court or district court under FTCA, Edison v. U.S., supra, 822 F.3d 510, if contractor retained by the US Government. ";
+        
+        }
+        else if (perps.value == "Contractor" && hrs.value =="Intermediate Force") { 
+        
+        document.getElementById("demo3").innerHTML = " disproportionate use of force, right to life/human rights violations, negligence, act of physical violence, file in superior court or district court under FTCA, Edison v. U.S., supra, 822 F.3d 510, if contractor retained by the US Government. ";
+        
+        }
+        
+        else if (perps.value == "Vigilante" && hrs.value =="Physical Touch") { 
+        
+        document.getElementById("demo3").innerHTML = " disproportionate use of force, right to life/human rights violations, act of physical violence, without lawful authority, file in superior court. ";
+        
+        }
+        else if (perps.value == "Vigilante" && hrs.value =="Energy Weapons")  { 
+        
+        document.getElementById("demo3").innerHTML = " disproportionate use of force, right to life/human rights violations, negligence, act of physical violence, without lawful authority, file in superior court. ";
+        
+        }
+        else if (perps.value == "Vigilante" && hrs.value =="Intermediate Force")  { 
+        
+        document.getElementById("demo3").innerHTML = " disproportionate use of force, right to life/human rights violations, negligence, act of physical violence, without lawful authority, file in superior court. ";
+        
+        } else { document.getElementById("demo3").innerHTML = "emerging technology, gray zone.";
+        
+        
+        }}
+            
+          </script>
+
+<button onclick="myFunction2()">Press Button</button> 
+<p></p>
+
+
+<font>Choose Parts of the Body Violated:</font>
+<p></p>
+<form>
+<input type="checkbox" id="head" onclick="body2Body()">
+<label for="bod01">Head </label> 
+<input type="checkbox" id="eyes" onclick="bod14()">
+<label for="bod014">Eyes </label>   
+<input onclick="body2Body2()" id="ears" type="checkbox">
+<label for="bod02">Ears </label> 
+<input type="checkbox" id="mouth" onclick="body2Body3()">
+<label for="bod03">Mouth </label> 
+<input type="checkbox" id="tongue" onclick="body2Body4()">
+<label for="bod04">Tongue </label> 
+<input type="checkbox" id="teeth" onclick="body2Body5()">
+<label for="bod05">Teeth </label> 
+<input type="checkbox" id="neck, thyroid" onclick="body2Body6()">
+<label for="bod06">Neck or Thyroid </label> 
+<input type="checkbox" id="stomach" onclick="body2Body7()">
+<label for="bod07">Stomach </label> 
+<input type="checkbox" id="arms" onclick="body2Body8()">
+<label for="bod08">Arms </label> 
+<input type="checkbox" id="hands" onclick="body2Body9()">
+<label for="bod09">Hands </label> 
+<input type="checkbox" id="private parts" onclick="body2Body10()" >
+<label for="bod010">Private Parts </label>
+<input type="checkbox" id="legs" onclick="body2Body11()">
+<label for="bod011">Legs </label>
+<input type="checkbox" id="feet" onclick="body2Body12()">
+<label for="bod012">Feet </label> 
+<input type="checkbox" id="back" onclick="body2Body13()">
+<label for="bod013">Back </label> </form>
+
+<script>
+function body2Body() {
+  var checkBox = document.getElementById("head");
+  var text3 = document.getElementById("headp").innerHTML = "The pliantiff's head was targeted, this is a violation of CA Penal Code 242) on battery by an individual/private entity, Police Miscoduct under Section 1983 if law enforcement or contracting agency is involved, the NIJ.gov states emerging technology like Active Denial has the effect of blunt forced trauma, blunt forced trauma has been proven to cause mTBI, this is negligence, excessive force, violating Section 1983, Penal Code Section 835(a).<u><font id='clearTTL3' onclick='clearHeadp()''>Clear Field</font></u>";
+  var text = document.getElementById("dimmo");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function body2Body2() {
+  var checkBox = document.getElementById("ears");
+  var text = document.getElementById("dimmo2");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+    function body2Body3() {
+      var checkBox = document.getElementById("mouth");
+      var text = document.getElementById("dimmo3");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function body2Body4() {
+      var checkBox = document.getElementById("tongue");
+      var text = document.getElementById("dimmo4");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function body2Body5() {
+      var checkBox = document.getElementById("teeth");
+      var text = document.getElementById("dimmo5");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function body2Body6() {
+      var checkBox = document.getElementById("neck, thyroid");
+      var text = document.getElementById("dimmo6");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function body2Body7() {
+      var checkBox = document.getElementById("stomach");
+      var text = document.getElementById("dimmo7");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+    
+    <script>
+    function body2Body8() {
+      var checkBox = document.getElementById("arms");
+      var text = document.getElementById("dimmo8");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function body2Body9() {
+      var checkBox = document.getElementById("hands");
+      var text = document.getElementById("dimmo9");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function body2Body10() {
+        document.getElementById("sexp").innerHTML = string;
+      var checkBox = document.getElementById("private parts");
+      var text = document.getElementById("dimmo10");
+      if (checkBox.checked == true){
+        text.style.display = "inline"; 
+      }else{
+         text.style.display = "none";
+      }
+    }
+    const string = new String("The pliantiff's body was targeted in the private area. Sexual assault/battery under CA Penal Code 243.4 PC, or Excessive Force by Law Enforcement, 42 USC 1983. <u><font id='clearTTL' onclick='clearSexp()'>Clear Field</font></u>");
+        
+    </script>
+
+<script>
+    function body2Body11() {
+      var checkBox = document.getElementById("legs");
+      var text = document.getElementById("dimmo11");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function body2Body12() {
+      var checkBox = document.getElementById("feet");
+      var text = document.getElementById("dimmo12");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function body2Body13() {
+      var checkBox = document.getElementById("back");
+      var text = document.getElementById("dimmo13");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function bod14(){
+      var checkBox = document.getElementById("eyes");
+      var text = document.getElementById("dim14");
+      var text2 = document.getElementById("eyesp").innerHTML = "The pliantiff's eyes were targeted, this violates domestic laws like CA Penal Code 417.25(a) on laser abuse, Police Miscoduct under Section 1983 since it threatens public safety, and international law like the UN Protocal on blinding lasers.<u><font id='clearTTL2' onclick='clearEyesp()'>Clear Field</font></u>";
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "";
+      }
+    }
+    
+</script>
+
+</scrip>
+    
+<p>Choose Bio-Effects Resulting From the Abuse:</p>
+
+<input type="checkbox" id="myCheck001" onclick="myFunction001()">
+<label for="myCheck001">Sore Feet</label> 
+<input onclick="myFunction002()" id="myCheck002" type="checkbox">
+<label for="myCheck002">Incontinence</label> 
+<input type="checkbox" id="myCheck003" onclick="myFunction003()">
+<label for="myCheck003">mTBI; concussion/cognitive symptoms</label> 
+<input type="checkbox" id="myCheck004" onclick="myFunction004()">
+<label for="myCheck004">Tinnitus</label> 
+<input type="checkbox" id="myCheck005" onclick="myFunction005()">
+<label for="myCheck005">Eye irritation & bruising</label>
+<input type="checkbox" id="myCheck006" onclick="myFunction006()">
+<label for="myCheck006">Sinus headache/rhinitis</label>
+<input type="checkbox" id="myCheck007" onclick="myFunction007()">
+<label for="myCheck007">Unhealthy stool</label>
+<input type="checkbox" id="myCheck008" onclick="myFunction008()">
+<label for="myCheck008">Abnormal bowel movements</label>
+<input type="checkbox" id="myCheck009" onclick="myFunction009()">
+<label for="myCheck009">Dry mouth/dehidration</label>
+<input type="checkbox" id="myCheck010" onclick="myFunction010()">
+<label for="myCheck010">Blurred vision</label>
+<input type="checkbox" id="myCheck011" onclick="myFunction011()">
+<label for="myCheck011">Scratched/singed tongue; mouth/lip sores/ulcers</label>
+<input type="checkbox" id="myCheck012" onclick="myFunction012()">
+<label for="myCheck012">Numbed Hearing/Sudden deafness (SSHL)</label>
+<input type="checkbox" id="myCheck013" onclick="myFunction013()">
+<label for="myCheck013">Dentin hypersensitivity</label>
+<input type="checkbox" id="myCheck014" onclick="myFunction014()">
+<label for="myCheck014">Paroxysmal coughing</label>
+<input type="checkbox" id="myCheck015" onclick="myFunction015()">
+<label for="myCheck015">Greater periodontal disease</label>
+<input type="checkbox" id="myCheck016" onclick="myFunction016()">
+<label for="myCheck016">Choking in sleep/while eating</label>
+<input type="checkbox" id="myCheck017" onclick="myFunction017()">
+<label for="myCheck017">Exploding head syndrome (EHS)</label>
+<input type="checkbox" id="myCheck018" onclick="myFunction018()">
+<label for="myCheck018">Thunderclap Headaches</label>
+<input type="checkbox" id="myCheck019" onclick="myFunction019()">
+<label for="myCheck019">Whiplash/back pain</label>
+<input type="checkbox" id="myCheck020" onclick="myFunction020()">
+<label for="myCheck020">Pruritus/Skin iriitation</label>
+<input type="checkbox" id="myCheck021" onclick="myFunction021()">
+<label for="myCheck021">Anal pain (proctalgia)</label>
+<input type="checkbox" id="myCheck022" onclick="myFunction022()">
+<label for="myCheck022">Cardiovascular/Chest pain</label>
+<input type="checkbox" id="myCheck023" onclick="myFunction023()">
+<label for="myCheck023">Itch from Tag/implant</label>
+<input type="checkbox" id="myCheck024" onclick="myFunction024()">
+<label for="myCheck024">Burn or Welt Mark</label>
+<input type="checkbox" id="myCheck025" onclick="myFunction025()">
+<label for="myCheck025">Inflammatory skin (PIH)</label>
+
+<script>
+    function myFunction001() {
+      var checkBox = document.getElementById("myCheck001");
+      var text = document.getElementById("text001");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function myFunction002() {
+      var checkBox = document.getElementById("myCheck002");
+      var text = document.getElementById("text002");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function myFunction003() {
+      var checkBox = document.getElementById("myCheck003");
+      var text = document.getElementById("text003");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function myFunction004() {
+      var checkBox = document.getElementById("myCheck004");
+      var text = document.getElementById("text004");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction005() {
+      var checkBox = document.getElementById("myCheck005");
+      var text = document.getElementById("text005");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction006() {
+      var checkBox = document.getElementById("myCheck006");
+      var text = document.getElementById("text006");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction007() {
+      var checkBox = document.getElementById("myCheck007");
+      var text = document.getElementById("text007");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction008() {
+      var checkBox = document.getElementById("myCheck008");
+      var text = document.getElementById("text008");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction009() {
+      var checkBox = document.getElementById("myCheck009");
+      var text = document.getElementById("text009");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction010() {
+      var checkBox = document.getElementById("myCheck010");
+      var text = document.getElementById("text010");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction011() {
+      var checkBox = document.getElementById("myCheck011");
+      var text = document.getElementById("text011");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction012() {
+      var checkBox = document.getElementById("myCheck012");
+      var text = document.getElementById("text012");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction013() {
+      var checkBox = document.getElementById("myCheck013");
+      var text = document.getElementById("text013");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction014() {
+      var checkBox = document.getElementById("myCheck014");
+      var text = document.getElementById("text014");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction015() {
+      var checkBox = document.getElementById("myCheck015");
+      var text = document.getElementById("text015");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction016() {
+      var checkBox = document.getElementById("myCheck016");
+      var text = document.getElementById("text016");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction017() {
+      var checkBox = document.getElementById("myCheck017");
+      var text = document.getElementById("text017");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction018() {
+      var checkBox = document.getElementById("myCheck018");
+      var text = document.getElementById("text018");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction019() {
+      var checkBox = document.getElementById("myCheck019");
+      var text = document.getElementById("text019");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction020() {
+      var checkBox = document.getElementById("myCheck020");
+      var text = document.getElementById("text020");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction021() {
+      var checkBox = document.getElementById("myCheck021");
+      var text = document.getElementById("text021");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+<script>
+    function myFunction022() {
+      var checkBox = document.getElementById("myCheck022");
+      var text = document.getElementById("text022");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+    <script>
+    function myFunction023() {
+      var checkBox = document.getElementById("myCheck023");
+      var text = document.getElementById("text023");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+    <script>
+    function myFunction024() {
+      var checkBox = document.getElementById("myCheck024");
+      var text = document.getElementById("text024");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+</script>
+
+    <script>
+    function myFunction025() {
+      var checkBox = document.getElementById("myCheck025");
+      var text = document.getElementById("text025");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+  </script> 
+
+<p>Choose Battery and Torture Signatures from Use of Force, Intermediate Force (If Applicable):</p>
+<input type="checkbox" id="mySign01" onclick="myFunctiont1()" onclick="geoFunction1()">
+<label for="mySign01">Sleep Deprivation</label> 
+<input onclick="myFunctiont2()" id="mySign02" type="checkbox">
+<label for="mySign02">Biological Systems</label> 
+<input type="checkbox" id="mySign03" onclick="myFunctiont3()">
+<label for="mySign03">Emotional Distress (IIED):</label> 
+<input type="checkbox" id="mySign04" onclick="myFunctiont4()">
+<label for="mySign04">After-effects</label> 
+<input type="checkbox" id="mySign05" onclick="myFunctiont5()" onclick="geoFunction2()">
+<label for="mySign05">Sexual Touching</label> 
+<br>
+
+
+<script>
+function myFunctiont1() {
+  var checkBox = document.getElementById("mySign01");
+  var text = document.getElementById("text01");
+  var text2 = document.getElementById("sleep").innerHTML = "Causing sleep deprivation through force or abuse is a threat to public safety, California Penal Code 206 if private party, Police Miscoduct under Section 1983, also applicable to contracting agency, and violates basic human rights; international law like the Geneva Convention, the 1948 Universal Declaration of Human Rights; the 1966 International Covenant on Civil and Political Right. See reference articles on torture and the USA's, USA contrator's role. <u><font id='clearTTL4' onclick='clearSleep()'>Clear Field</font></u>'";
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+    function myFunctiont2() {
+        var text2 = document.getElementById("biol").innerHTML = "Torture affecting normal human biological function is deprivation of rights, California Penal Code 206 if private party, misconduct under 42 US 1983 if law enforcement or contracting agency, violates international law under the 1948 Universal Declaration of Human Rights; the 1966 International Covenant on Civil and Political Right. See reference articles on torture and the USA's, USA contrator's role. <u><font id='clearTTL5' onclick='clearBiolg()'>Clear Field</font></u>"
+      var checkBox = document.getElementById("mySign02");
+      var text = document.getElementById("text02");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    
+    </script>
+
+<script>
+    function myFunctiont3() {
+        var iied = document.getElementById("iied").innerHTML = "IIED or emotional distress, is an intentional tort, a civil wrong committed on purpose, in this case using intermediate force that resuled in observable abuse/torture signatures, torture is against California Penal Code 206, mental torture under 18 U.S.C. 2340-2340A, where pain is so severe giving fear to death or orgnan failure, it also violates basic human rights, international agreements/law i.e. United Nations Convention Against Torture (CAT); the 1948 Universal Declaration of Human Rights ect.<u><font id='clearTTL7' onclick='clearIied()'>Clear Field</font></u>";
+      var checkBox = document.getElementById("mySign03");
+      var text = document.getElementById("text03");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+
+<script>
+    function myFunctiont4() {
+        var c = document.getElementById("aftera").innerHTML = "Battery causing after effects like brusing, welts, blood in stool etc. is a violation of Penal Code - 243, also it can be the effects of torture, torture is a violation of basic human rights, color of law; 42 US 1983, international agreements/law i.e. United Nations Convention Against Torture (CAT); the 1948 Universal Declaration of Human Rights ect. <u><font id='clearTTL6' onclick='clearAfter()'>Clear Field</font></u>"
+      var checkBox = document.getElementById("mySign04");
+      var text = document.getElementById("text04");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function myFunctiont5() {
+      var p =  document.getElementById("sexp").innerHTML = "The pliantiff's body was targeted in the private area. Sexual assault/battery, CA Penal Code 243.4 PC, or Excessive Force by Law Enforcement, 42 USC 1983. <u><font id='clearTTL' onclick='clearSexp()'>Clear Field</font></u>";
+      var checkBox = document.getElementById("mySign05");
+      var text = document.getElementById("text05");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+
+<p>Were you placed in '5150' Psyciatric Hold for reporting the abuse?:</p>
+<input type="checkbox" id="sphld" onclick="scyHold()">
+<label for="yesno01">Yes</label> 
+<input onclick="scyHold2()" id="sphld2" type="checkbox">
+<label for=yesno02">No</label> 
+<input onclick="scyHold02();" onclick="specialFun12();" id="sphld02" type="checkbox">
+<label for=yyesno03">Defensive/Threatened</label> 
+
+
+<script>
+function scyHold() {
+    var psytreatstat = document.getElementById("treatmentstat").innerHTML = "Involuntary treatment by the authorities when no probable cause is a violation of False Claims Act and a violation of the plaintiff's civil rights (O'Connor v Donaldson). A violation of Section A 241, color of law, Law Enforcement Misconduct. <u><font id='clearTTL9' onclick='clear5150yes()'>Clear Field</font></u>";
+  var checkBox = document.getElementById("sphld");
+  var text = document.getElementById("sphyyesno");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+    function scyHold2() {
+      var checkBox = document.getElementById("sphld2");
+      var text = document.getElementById("sphyyesno5");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+ 
+
+<script>
+  function scyHold02() {
+var defensive = document.getElementById("no5150butdef").innerHTML = "There was innaction or a defensive posture by police after reporting abuse, negligence in special relationship: police failed to comply in either stopping the abuse because they were complicit, color of law, or not investigating and taking the perpetrator into custody; <u><font id='clearTTL10' onclick='clear5150no()'>Clear Field</font></u>";
+    var checkBox = document.getElementById("sphld02");
+    var text = document.getElementById("sphyyesno2");
+    if (checkBox.checked == true){
+      text.style.display = "inline";
+    } else {
+       text.style.display = "none";
+    }
+  }
+
+</script>
+
+<p>Who Put You on 5150 Pychiatric Hold (If Applicable)?:</p>
+<input type="checkbox" id="phold01" onclick="phoFunctiont1()">
+<label for="phod01">Court; Judge</label> 
+<input onclick="phoFunctiont2()" id="phold02" type="checkbox">
+<label for="phod02">Peace Officer (Sheriff; Police)</label> 
+<input type="checkbox" id="phold03" onclick="phoFunctiont3()">
+<label for="phod03">Medical Staff or 'Mobile Crises Team'</label> 
+<input type="checkbox" id="phold04" onclick="phoFunctiont4()">
+<label for="phod04">Mental Health Professional</label> 
+
+<script>
+  function phoFunctiont1() {
+    var checkBox = document.getElementById("phold01");
+    var text = document.getElementById("pholdd01"); 
+    if (checkBox.checked == true){
+      text.style.display = "inline";
+    } else {
+       text.style.display = "none";
+    }
+  }
+  </script>
+  
+  <script>
+      function phoFunctiont2() {
+        var checkBox = document.getElementById("phold02");
+        var text = document.getElementById("pholdd02");
+        if (checkBox.checked == true){
+          text.style.display = "inline";
+        } else {
+           text.style.display = "none";
+        }
+      }
+      </script>
+  
+  <script>
+      function phoFunctiont3() {
+        var checkBox = document.getElementById("phold03");
+        var text = document.getElementById("pholdd03");
+        if (checkBox.checked == true){
+          text.style.display = "inline";
+        } else {
+           text.style.display = "none";
+        }
+      }
+      </script>
+  
+  <script>
+      function phoFunctiont4() {
+        var checkBox = document.getElementById("phold04");
+        var text = document.getElementById("pholdd04");
+        if (checkBox.checked == true){
+          text.style.display = "inline";
+        } else {
+           text.style.display = "none";
+        }
+      }
+      </script>
+
+<p>Choose if there was Medical/Body Violations:</p>
+<input type="checkbox" id="body01" onclick="bodFunctiont1()">
+<label for="bod01">Malpractice</label> 
+<input onclick="bodFunctiont2()" id="body02" type="checkbox">
+<label for="bod02">False Diagnosis</label> 
+<input type="checkbox" id="body03" onclick="bodFunctiont3()">
+<label for="bod03">Involuntary Medications</label> 
+<input type="checkbox" id="body04" onclick="bodFunctiont4()">
+<label for="bod04">Negligent Medical Actions</label> 
+<input type="checkbox" id="body05" onclick="bodFunctiont5()">
+<label for="bod05">Forced Isolation</label> 
+<input type="checkbox" id="body06" onclick="bodFunctiont6()">
+<label for="bod06">Human Tag(TTL), RFID Implant</label> 
+
+<script>
+function bodFunctiont1() {
+    var malpr = document.getElementById("medmal").innerHTML = "Medical malpractice under California AB 35 awarding damages, CA Civil Procedure Section 340.5 on Statute of Limitations, Medical negligence under 22 U.S. Code 2702; <u><font id='clearTTL11' onclick='medicalMal()'>Clear Field</font></u>";
+  var checkBox = document.getElementById("body01");
+  var text = document.getElementById("tttext01");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+    function bodFunctiont2() {
+      var checkBox = document.getElementById("body02");
+      var text = document.getElementById("tttext02");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function bodFunctiont3() {
+      var checkBox = document.getElementById("body03");
+      var text = document.getElementById("tttext03");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function bodFunctiont4() {
+        var neglmedpro = document.getElementById("negmed").innerHTML = "Negligent medical actions is a violation of medical ethics. See Medical Board of California Business and Professions Code.<u><font id='clearTTL12' onclick='neglMal()'></u>";
+      var checkBox = document.getElementById("body04");
+      var text = document.getElementById("tttext04");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function bodFunctiont5() {
+      var checkBox = document.getElementById("body05");
+      var text = document.getElementById("tttext05");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function bodFunctiont6() {
+        var rfid = document.getElementById("rfidchip").innerHTML = "Non-consensual human microchip implants are illegal in many states, it violates California Civil Code section 52.7; and 24175 (a) on medical experiments without informed consent, It violates Right to Privacy, Amendment Four of the US Constitution, it violates the 1974 National Research Act; and 'Common Rule' Protection of Human Subjects in government funded research. <u><font id='clearTTL8' onclick='clearRfid()'>Clear Field</font></u>";
+      var checkBox = document.getElementById("body06");
+      var text = document.getElementById("tttext06");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<p>Choose parts of the body where there was Medical/Body Violations (If Applicable):</p>
+<form>
+    <input type="checkbox" id="teeth" onclick="bbod4()">
+    <label for="bbod05">Teeth </label> 
+    <input type="checkbox" id="brain" onclick="bbod5()">
+    <label for="bbod05">Brain </label> 
+    <input type="checkbox" id="ears" onclick="bbod6()">
+    <label for="bbod06">Ears </label> 
+<input type="checkbox" id="body" onclick="bbod7()">
+<label for="bbod07">Stomach</label> 
+<input type="checkbox" id="stomach" onclick="bbod8()">
+<label for="bbod08">Body</label> 
+<input type="checkbox" id="eyes" onclick="bbod9()">
+<label for="bbod09">Eyes </label>  
+<input type="checkbox" id="legs" onclick="bbod10()">
+<label for="bbod10">Legs </label> 
+<input type="checkbox" id="feet" onclick="bbod11()">
+<label for="bbod11">Feet </label>  
+<input type="checkbox" id="hands" onclick="bbod12()">
+<label for="bbod12">Hands </label> 
+<input type="checkbox" id="back" onclick="bbod14()">
+<label for="bbod14">Back </label>  
+
+<script>
+    function bbod4() {
+      var checkBox = document.getElementById("teeth");
+      var text = document.getElementById("ddim4");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+
+<script>
+    function bbod5() {
+      var checkBox = document.getElementById("brain");
+      var text = document.getElementById("ddim5");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+
+<script>
+    function bbod6() {
+      var checkBox = document.getElementById("ears");
+      var text = document.getElementById("ddim6");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+
+    <script>
+        function bbod7() {
+          var checkBox = document.getElementById("body");
+          var text = document.getElementById("ddim7");
+          if (checkBox.checked == true){
+            text.style.display = "inline";
+          } else {
+             text.style.display = "inline";
+          }
+        }
+        </script>
+
+
+    <script>
+        function bbod8() {
+          var checkBox = document.getElementById("body");
+          var text = document.getElementById("ddim8");
+          if (checkBox.checked == true){
+            text.style.display = "inline";
+          } else {
+             text.style.display = "inline";
+          }
+        }
+        </script>
+
+<script>
+    function bbod9() {
+      var checkBox = document.getElementById("eyes");
+      var text = document.getElementById("ddim9");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+
+<script>
+    function bbod10() {
+      var checkBox = document.getElementById("legs");
+      var text = document.getElementById("ddim10");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+
+
+<script>
+    function bbod11() {
+      var checkBox = document.getElementById("feet");
+      var text = document.getElementById("ddim11");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+
+
+
+<script>
+    function bbod12() {
+      var checkBox = document.getElementById("hands");
+      var text = document.getElementById("ddim12");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "inline";
+      }
+    }
+    </script>
+        
+      
+    
+    <script>
+        function bbod14(){
+          var checkBox = document.getElementById("back");
+          var text = document.getElementById("ddim14");
+          if (checkBox.checked == true){
+            text.style.display = "inline";
+          } else {
+             text.style.display = "";
+          }
+        }
+        
+    </script>
+<p>Choose Computer/Cyber Activity (If Applicable):</p>
+<input type="checkbox" id="overheated laptop" onclick="compSurv()">
+<label for="cod01">Overheated Laptop</label> 
+<input onclick="compSurv2()" id="overheated phone" type="checkbox">
+<label for="cod02">Overheated Phone</label> 
+<input type="checkbox" id="denial of service (DoS)" onclick="compSurv3()">
+<label for="cod03">Denial of Service (DoS)</label> 
+<input type="checkbox" id="currupted file" onclick="compSurv4()">
+<label for="cod04">Currupted File</label> 
+<input type="checkbox" id="E-Mail tampering" onclick="compSurv5()">
+<label for="cod05">E-Mail Tampering</label> 
+<input type="checkbox" id="social engineering" onclick="compSurv6()">
+<label for="cod06">Social Engineering</label> 
+<input type="checkbox" id="doxing" onclick="compSurv7()">
+<label for="cod07">Doxing</label> 
+<input type="checkbox" id="online censorship" onclick="compSurv8()">
+<label for="cod08">Online Censorship</label> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    <!-- Surveillance abuse - computer/cyber: [overheated laptop, overheated phone, denial of service (DoS), currupted file, deleted E-mail, social engineering, doxing, online censorship]-->
+<script>
+function compSurv() {
+  var checkBox = document.getElementById("overheated laptop");
+  var text = document.getElementById("cimmo");
+  if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violtion of my civil liberties and Fourth Amendment; First Amendment; 18 U.S.C. §2511. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violation of the Computer Fruad and Abuse Act; 18 U.S.C. §1030, and a violation of California Code §§22498 if done through use of internet. Contractors that were agents to the government were negligent or culpability spectrum and liability protections should be waved. E.g. WhatsApp Inc. v. NSO Grp. Feb 23, 2024. ";
+      ;
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violation of the Computer Fruad and Abuse Act; and a violation of California Code §§22498 if done through use of internet; 42 U.S.C.A. § 1983. Hall v. Garson, 430 F.2d 430 (5th Cir. 1970), plaintiffs who are deprived of their civil rights by private persons, that is, those not employed by federal, state, or municipal governments. ";
+    } else {
+         text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function compSurv2() {
+  var checkBox = document.getElementById("overheated phone");
+  var text = document.getElementById("cimmo2");
+  if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violtion of my civil liberties and Fourth Amendment; First Amendment; 18 U.S.C. §2511. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violation of the Computer Fruad and Abuse Act; 18 U.S.C. §1030, and a violation of California Code §§22498 if done through use of internet. Contractors that were agents to the government were negligent or culpability spectrum and liability protections should be waved. E.g. WhatsApp Inc. v. NSO Grp. Feb 23, 2024. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violation of the Computer Fruad and Abuse Act; and a violation of California Code §§22498 if done through use of internet. ";
+    } else {
+         text.style.display = "none";
+  }
+}
+
+
+</script>
+
+<script>
+    function compSurv3() {
+      var checkBox = document.getElementById("denial of service (DoS)");
+      var text = document.getElementById("cimmo3");
+      if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violtion of my civil liberties and Fourth Amendment; First Amendment; 18 U.S.C. §2511. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Denial of service (DoS) is a violation of the Computer Fruad and Abuse Act; 18 U.S.C. §1030, and a violation of California Code §§22498 if done through use of internet. Contractors that are agents of the government are grossly negligent or culpability spectrum in this instance and liability protections should be waved. E.g. WhatsApp Inc. v. NSO Grp. Feb 23, 2024. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Denial of service (DoS) is a violation of the Computer Fruad and Abuse Act; and a violation of California Code §§22498 if done through use of internet. ";
+    } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function compSurv4() {
+      var checkBox = document.getElementById("currupted file");
+      var text = document.getElementById("cimmo4");
+      if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violtion of my civil liberties and Fourth Amendment; First Amendment; 18 U.S.C. §2511. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Computer hacking and tampering with files is a violation of the Computer Fruad and Abuse Act; 18 U.S.C. §1030, and a violation of California Code §§22498 if done through use of internet. Private contractors, government contractors are grossly negligent in this instance and liability protections afforded to them should be waved. E.g. WhatsApp Inc. v. NSO Grp. Feb 23, 2024. Simply performing under a government contract does not entitle a private contractor to absolute immunity. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Computer hacking and tampering with files is a violation of the Computer Fruad and Abuse Act; and a violation of California Code §§22498 if done through use of internet. ";
+    } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function compSurv5() {
+      var checkBox = document.getElementById("E-Mail tampering");
+      var text = document.getElementById("cimmo5");
+      if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "E-Mail hacking by law eforcement is a violation of the Electronic Communications Privacy Act (ECPA), 18 U.S.C. §2511 prohobotions color of law, the Fourth Amendment; Secion 702 of the FISA has been criticized as being misleading, the plaintiff is a victim of surveillance abuse. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "E-mail hacking or tampering is a violation of California Unauthorized Computer Access Law, Computer Fruad and Abuse Act; 18 U.S.C. §1030. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Social engineering is fruadulent activity and a violation of the Computer Fruad and Abuse Act; and a violation of California Code §§22498 if done through use of internet. ";
+    } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+  
+    
+    <script>
+    function compSurv6() {
+      var checkBox = document.getElementById("social engineering");
+      var text = document.getElementById("cimmo6");
+             if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violtion of my civil liberties and Fourth Amendment; First Amendment; 18 U.S.C. §2511. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Social engineering is fruadulent activity and a violation of the Computer Fruad and Abuse Act; 18 U.S.C. §1030, and a violation of California Code §§22498 if done through use of internet. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Social engineering is fruadulent activity and a violation of the Computer Fruad and Abuse Act; and a violation of California Code §§22498 if done through use of internet. ";
+    } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function compSurv7() {
+      var checkBox = document.getElementById("doxing");
+      var text = document.getElementById("cimmo7");
+      if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Electronic suveillance abuse & interference with electronic devices is a violtion of my civil liberties and Fourth Amendment; First Amendment; 18 U.S.C. §2511. ";
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Cyberstalking by private individuals or companies is a violation of California Cyberstalking, Penal Laws Code 646.9 PC; Federal Statutue 18 U.S.C. §2261A. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Cyberstalking by private individuals or companies is a violation of California Cyberstalking, Penal Laws Code 646.9 PC; Federal Statutue 18 U.S.C. §2261A. ";
+    } else {
+       text.style.display = "none";
+      }
+    }
+    </script>
+    
+
+<script>
+  function compSurv8() {
+    var checkBox = document.getElementById("online censorship");
+    var text = document.getElementById("cimmo8");
+    if (checkBox.checked == true && perps.value == "Law Enforcement"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "Suveillance abuse, interference with electonic medium of communication, and online censorship are a violtion of civil liberties and free speech provisions of the First Amendment. "; 
+    } else if 
+    (checkBox.checked == true && perps.value == "Contractor"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "See supporting evidence articles on social media censorship complicity. ";
+    
+    } else if 
+    (checkBox.checked == true && perps.value == "Vigilante"){
+      text.style.display = "inline"
+      document.getElementById("first").innerHTML = "See supporting evidence articles on social media censorship complicity. ";
+    } else {
+       text.style.display = "none";
+    }
+  }
+  </script>
+
+<br>
+
+<p>HUMINT, Discrediting Efforts:</p>
+<input type="checkbox" id="mail tampering" onclick="humitSurv()">
+<label for="pod01">Mail Tampering</label> 
+<input onclick="humintSurv2()" id="blackbag" type="checkbox">
+<label for="pod02">Blackbags</label> 
+<input type="checkbox" id="gaslighting" onclick="humintSurv3()">
+<label for="pod03">Gaslighting</label> 
+<input type="checkbox" id="slander" onclick="humintSurv4()">
+<label for="pod04">Slander</label> 
+<input type="checkbox" id="suspect person" onclick="humitSurv5()">
+<label for="pod05">Suspect Person(s)</label> 
+<input type="checkbox" id="neighbors" onclick="humintSurv6()">
+<label for="pod06">Neighbors Involved</label> 
+<input type="checkbox" id="hostile working environment" onclick="humintSurv7()">
+<label for="pod07">Hostile Working Environment</label>  
+<input type="checkbox" id="blackballing" onclick="humintSurv8()">
+<label for="pod08">Blackballing</label>  
+<input type="checkbox" id="controlled opposition" onclick="humintSurv9()">
+<label for="pod09">Controlled Opposition</label> 
+<input type="checkbox" id="public corruption" onclick="humintSurv10()">
+<label for="pod10">Public Corruption</label>  
+<input type="checkbox" id="police" onclick="humintSurv11()">
+<label for="pod11">Poilce Misconduct</label> 
+<input type="checkbox" id="vandalism" onclick="humintSurv12()">
+<label for="pod12">Vandalism</label>   
+
+<script>
+function humitSurv() {
+  var checkBox = document.getElementById("mail tampering");
+  var text = document.getElementById("zimmo");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+function humintSurv2() {
+  var checkBox = document.getElementById("blackbag");
+  var text = document.getElementById("pimmo2");
+  if (checkBox.checked == true){
+    text.style.display = "inline";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+<script>
+    function humintSurv3() {
+      var checkBox = document.getElementById("gaslighting");
+      var text = document.getElementById("pimmo3");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv4() {
+      var checkBox = document.getElementById("slander");
+      var text = document.getElementById("pimmo4");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function humitSurv5() {
+      var checkBox = document.getElementById("suspect person");
+      var text = document.getElementById("zimmo5");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv6() {
+      var checkBox = document.getElementById("neighbors");
+      var text = document.getElementById("pimmo6");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    
+    <script>
+    function humintSurv7() {
+      var checkBox = document.getElementById("hostile working environment");
+      var text = document.getElementById("pimmo7");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv8() {
+      var checkBox = document.getElementById("blackballing");
+      var text = document.getElementById("pimmo8");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv9() {
+      var checkBox = document.getElementById("controlled opposition");
+      var text = document.getElementById("pimmo9");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv10() {
+      var checkBox = document.getElementById("public corruption");
+      var text = document.getElementById("pimmo10");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv11() {
+      var checkBox = document.getElementById("police");
+      var text = document.getElementById("pimmo11");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<script>
+    function humintSurv12() {
+      var checkBox = document.getElementById("vandalism");
+      var text = document.getElementById("pimmo12");
+      if (checkBox.checked == true){
+        text.style.display = "inline";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+
+<br>
+          <!-- ///////////////////////-->
+
+          <br>
+
+          <p>Complaint:</p>
+<font>The Plaintiff: </font><b><u><font type="times" id="plaintiff01"></font></u></b><font> is filing a lawsuit against: </font><b><u><font type="times" id="perpsvalue"></font></u></b> 
+<b><u><font type="times" id="defense01">person, </font></b></u><font> for abuse that was from </font><font type="times" id="hrssvalue"> weapon</font><font> while </font><font type="times" id="wherevalue">dwelling/vehicle.</font><font>. </font><font>The plaintiff describes the following use of force: </font> 
+<font id="text" type="times" style="display:none">Excessive force like physical restriant, choke hold, use of baton, </font>
+<font id="text2" style="display:none">Conducted Energy (CED) or taser, </font>
+<font id="text3" type="times" style="display:none">Directed energy intermediate force capabilities (DE IFC), that uses a maser or ray to inflict pain. i.e. Raytheon's SS-ADT or similar NLW technology, </font>
+<font id="text4" style="display:none">Laser designed for ocular irritation, dazzler effect, </font>
+<font id="text5" style="display:none">Sonic weapon(USW), directional sound(LRAD), acoustical violence, noise/psychological torture, </font>
+<font id="text6" style="display:none">Projectiles like bean bags, rubber bullets, concussion grenades, </font>
+<font id="text7" style="display:none">Bio-weapons like incapacitants, inflamation, sedative, inhaled anesthetics, </font>
+<font id="text8" style="display:none">Skin irritants like itching powder, sneazing powder, poison ivey, </font>
+<font id="text9" style="display:none">Chemical irritants like pepper spray, tear gas, stink bombs, </font>
+<font id="text10" style="display:none">Unreasonable force like physical assault, battery, bodily harm, </font>
+<font>on parts of the body: </font> 
+<font id="dimmo" style="display:none">head, </font>
+<font id="dim14" style="display:none">eyes, </font>
+<font id="dimmo2" style="display:none">ears, </font>
+<font id="dimmo3" style="display:none">mouth, </font>
+       <font id="dimmo4" style="display:none">tongue, </font>
+       <font id="dimmo5" style="display:none">teeth, </font>
+       <font id="dimmo6" style="display:none">neck;thyroid, </font>
+       <font id="dimmo7" style="display:none">stomach, </font>
+       <font id="dimmo8" style="display:none">arms, </font>
+       <font id="dimmo9" style="display:none">hands, </font>
+       <font id="dimmo10" style="display:none">private parts, </font>
+       <font id="dimmo11" style="display:none">legs, </font>
+       <font id="dimmo12" style="display:none">feet, </font>
+       <font id="dimmo13" style="display:none">back, </font>
+       <font type="times" style="display:none"></font>
+       with the following bio-effects: 
+<font id="text001" style="display:none">sore Feet, </font>
+<font id="text002" style="display:none">incontinence, </font>
+<font id="text003" style="display:none">mTBI; concussion/cognitive symptoms, </font>
+<font id="text004" style="display:none">tinnitus, </font>
+<font id="text005" style="display:none">dry/burning/bruised eyes, </font>
+<font id="text006" style="display:none">sinus headache/rhinitis, </font>
+<font id="text007" style="display:none">unhealthy stool, </font>
+<font id="text008" style="display:none">abnormal bowel movements, </font>
+<font id="text009" style="display:none">dry mouth/dehidration, </font>
+<font id="text010" style="display:none">blurred vision, </font>
+<font id="text011" style="display:none">scratched/singed tongue; mouth/lip sores/ulcers, </font>
+<font id="text012" style="display:none">numbed Hearing/Sudden deafness (SSHL), </font>
+<font id="text013" style="display:none">dentin hypersensitivity, </font>
+<font id="text014" style="display:none">paroxysmal coughing, </font>
+<font id="text015" style="display:none">greater periodontal disease, </font>
+<font id="text016" style="display:none">choking in sleep/eating, </font>
+<font id="text017" style="display:none">exploding head syndrome (EHS), </font>
+<font id="text018" style="display:none">thunderclap headaches, </font>
+<font id="text019" style="display:none">whiplash/back pain, </font>
+<font id="text020" style="display:none">pruritus/skin iriitation, </font>
+<font id="text021" style="display:none">anal pain (proctalgia), </font>
+<font id="text022" style="display:none">cardiovascular/Chest pain, </font>
+<font id="text023" style="display:none">itch from tag(TTL)/implant, </font>
+<font id="text024" style="display:none">burn mark or welt, </font>
+<font id="text025" style="display:none">inflammatory skin (PIH), </font>
+<font>The plaintiff experienced the following battery and torture signatures from abuse: </font>
+<font id="text01" style="display:none">Caused sleep deprivation, tiredness, fatique, affecting health. </font>
+<font id="text02" style="display:none">Affected mobility; normal body functionality. </font>
+<font id="text03" style="display:none">Psychological torture from pain affected mental wellness, work/school performance. </font>
+<font id="text04" style="display:none">Battery signatures like brusing to touch, marks on body, TBI, sinus migraine/rhinitis, nausia, soft stool/blood in stool. </font>
+<font id="text05" style="display:none">Sexual battery signatures like violating private areas affecting reproductive health, mental health, personal privacy. </font>
+<!-- //////Psyciatric Hold -->
+<font id="treatmentyes"></font> 
+<font id="sphyyesno" style="display:none"> The plaintiff was placed into involuntary treatment '5150,' </font>
+<font id="sphyyesno5" style="display:none"></font>
+<font id="sphyyesno2" style="display:none"> The plaintiff was threatened with involuntary treatment or the authorities became defensive whene reporting the aforementioned abuse; </font>
+<!-- ////Was responsible for Psyciatric Hold -->
+<font> </font>
+<font id="pholdd01" style="display:none">by a Judge, </font>
+<font id="pholdd02" style="display:none">by a peace officer (Sheriff; police), </font>
+<font id="pholdd03" style="display:none">by medical staff or 'mobile crises team,' </font>
+<font id="pholdd04" style="display:none">by mental health professional, </font>
+<font>when reporting the abuse, </font>
+<font>The plaintiff experienced the following Medical Violations part of the sanctioning/targeting: </font>
+<font id="tttext01" style="display:none">malpractice, </font>
+<font id="tttext02" style="display:none">false diagnosis, </font>
+<font id="tttext03" style="display:none">involuntary medications, </font>
+<font id="tttext04" style="display:none">negligent medical actions, </font>
+<font id="tttext05" style="display:none">force isolation, </font>
+<font id="tttext06" style="display:none">human tag(TTL); RFID chip, </font>
+<font>to body part(s): </font>
+<font id="ddim4" style="display:none">teeth, </font>
+<font id="ddim5" style="display:none">brain, </font>
+<font id="ddim6" style="display:none">ears, </font>
+       <font id="ddim7" style="display:none">stomach, </font>
+       <font id="ddim8" style="display:none">body, </font>
+       <font id="ddim9" style="display:none">eyes, </font>
+       <font id="ddim10" style="display:none">legs, </font>
+       <font id="ddim11" style="display:none">feet, </font>
+       <font id="ddim12" style="display:none">hands, </font>
+       <font id="ddim14" style="display:none">back, </font>
+<!-- ////Computer, Cyber Attacks Reported: -->
+<!-- //Internet Disruptions, Computer Interference, Psychological Warfare  --> 
+<font>There was cyber-technology component to the harassment like: </font> 
+ <font id="cimmo" style="display:none">overheated laptop, </font>
+<font id="cimmo2" style="display:none">overheated phone, </font>
+<font id="cimmo3" style="display:none">denial of service (DoS), </font>
+<font id="cimmo4" style="display:none">currupted file, </font>
+<font id="cimmo5" style="display:none">E-Mail tampering, </font>
+<font id="cimmo6" style="display:none">social engineering, </font>
+<font id="cimmo7" style="display:none">doxing, </font>
+<font id="cimmo8" style="display:none">online censorship, </font>
+<!-- ////HUMINT, Victim Discrediting, HUMINT, Tradecraft, Discrediting (5D), Psychological Warfare Efforts Reported: -->
+<font>The plaintiff encountered the following human (HUMINT/Psy-Ops) component to the harassment: </font> 
+<font id="zimmo" style="display:none">mail tampering, </font>
+       <font id="pimmo2" style="display:none">blackbags, </font>
+       <font id="pimmo3" style="display:none">gaslighting, </font>
+       <font id="pimmo4" style="display:none">slander, </font>
+       <font id="zimmo5" style="display:none">suspect persons, </font>
+       <font id="pimmo6" style="display:none">neighbors involved, </font>
+       <font id="pimmo7" style="display:none">hostile working environment, </font>
+       <font id="pimmo8" style="display:none">blackballing, </font>
+       <font id="pimmo9" style="display:none">controlled opposition, </font>
+       <font id="pimmo10" style="display:none">judicial/public corruption, </font>
+       <font id="pimmo11" style="display:none">police misconduct, </font>
+       <font id="pimmo12" style="display:none">vandalism</font>.
+<p></p>
+<br>
+<font>Cause of Action:</font>
+<p></p>
+<!-- <font>Statutes/Precedent on Use of Force/Intermediate Force:</font> -->
+<font id="demo3"></font>
+<!-- <button onclick="myFunction2()">Press Button</button> -->
+
+<p>Statutes/Precedent on Body Violations; Physical Abuse:</p>
+<font id="sexp"><!--private parts--></font>
+<p></p>
+<font id="eyesp"><!--Eyes--></font>
+<p></p>
+<font id="headp"><!--Head--></font>
+<p></p>
+<font id="sleep"><!--sleep deprivation--></font>
+<p></p>
+<font id="biol"><!--biological function--></font>
+<p></p>
+<font id="aftera"><!--Battery marks--></font>
+<p></p>
+<font id="iied"><!--emotional distress--></font>
+<p></p>
+<font>Non-Consent Medical/ Body Violations:</font> 
+<p></p>
+<font id="rfidchip"><!--TTL/ RFID Chip--></font> 
+<p></p>
+<font id="medmal"><!--Malpractice--></font>
+<p></p>
+<font id="negmed"><!--Negligent Medical Actions--></font>
+<p></p>
+<font id="treatmentstat"><!--5150--></font>
+<p></p>
+<font id="no5150butdef"><!--Cops Special Relationship--></font>
+<p></p><u><font onclick='clearButtons();'>Clear All Clear Field Tags</font></u>
+
+
+<script> 
+    function clearSexp(){
+        const string2 = new String("");
+        document.getElementById("sexp").innerHTML = string2;
+    }
+    </script>
+
+
+<script> 
+    function clearEyesp(){
+        const string3 = new String("");
+        document.getElementById("eyesp").innerHTML = string3;
+    }
+    </script>
+
+<script> 
+    function clearHeadp(){
+        const string2 = new String("");
+        document.getElementById("headp").innerHTML = string2;
+    }
+    </script>
+
+<script> 
+    function clearSleep(){
+        const string2 = new String("");
+        document.getElementById("sleep").innerHTML = string2;
+    }
+    </script>
+
+<script> 
+    function clearBiolg(){
+        const string2 = new String("");
+        document.getElementById("biol").innerHTML = string2;
+    }
+    </script>
+
+
+<script> 
+    function clearAfter(){
+        const string2 = new String("");
+        document.getElementById("aftera").innerHTML = string2;
+    }
+    </script>
+
+<script> 
+    function clearIied(){
+        const string2 = new String("");
+        document.getElementById("iied").innerHTML = string2;
+    }
+    </script>
+
+<script> 
+    function clearRfid(){
+        const string2 = new String("");
+        document.getElementById("rfidchip").innerHTML = string2;
+    }
+    </script>
+
+
+<script> 
+    function clear5150yes(){
+        const string2 = new String("");
+        document.getElementById("treatmentstat").innerHTML = string2;
+    }
+    </script>
+
+<script> 
+    function clear5150no(){
+        const string2 = new String("");
+        document.getElementById("no5150butdef").innerHTML = string2;
+    }
+    </script>
+
+
+<script> 
+    function medicalMal(){
+        const string2 = new String("");
+        document.getElementById("medmal").innerHTML = string2;
+    }
+    </script>
+
+    <script> 
+    function neglMal(){
+        const string2 = new String("");
+        document.getElementById("neglmedpro").innerHTML = string2;
+    }
+    </script>
+
+<script> 
+    function clearButtons(){
+        const string = new String("");
+        document.getElementById("clearTTL").innerHTML = string;
+        document.getElementById("clearTTL2").innerHTML = string;
+        document.getElementById("clearTTL3").innerHTML = string;
+        document.getElementById("clearTTL4").innerHTML = string;
+        document.getElementById("clearTTL5").innerHTML = string;
+        document.getElementById("clearTTL6").innerHTML = string;
+        document.getElementById("clearTTL7").innerHTML = string;
+        document.getElementById("clearTTL8").innerHTML = string;
+        document.getElementById("clearTTL9").innerHTML = string;
+        document.getElementById("clearTTL10").innerHTML = string;
+        document.getElementById("clearTTL11").innerHTML = string;
+        
+    }
+    </script>
+
+</body>
+</html>
